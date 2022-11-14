@@ -1,0 +1,124 @@
+\documentclass{article}
+
+\usepackage[hmargin=2cm, vmargin=1cm]{geometry}
+\usepackage[hidelinks]{hyperref}
+
+\pagestyle{empty}
+
+% Section formatting
+\usepackage{titlesec}
+% Usage:
+% \titleformat{command}[shape]{format}{label}{sep}{before-code}[after-code]
+% command one of: \part, \chapter, \section, \subsection,
+%                 \subsubsection, \paragraph, \subparagraph
+% shape one of:   hang, block, display, runin, leftmargin,
+%                 rightmargin, drop, wrap, frame
+\titleformat{\section}
+[display]
+{\bfseries\Large}
+{}
+{0.5ex}
+{}
+[\titlerule]
+
+\newcommand{\resumeSection}[1]{\section*{#1}}
+\newcommand{\institution}[1]{\subsection*{\scshape{#1}}}
+\newcommand{\jobPosition}[3]{\subsubsection*{\scshape{#1}\hfill #2 -- #3}}
+
+\begin{document}
+
+\begin{center}
+  {\Huge\scshape{Erik Overdahl}}
+  \\\vspace{3pt}
+  \normalsize{
+    St.\ Paul, MN
+    $|$
+    erik.overdahl@gmail.com
+    $|$
+    +1 (260) 437-0551
+    \\
+    \href{https://github.com/erik-overdahl}{GitHub: \underline{erik-overdahl}}
+    $|$
+    \href{https://linkedin.com/in/erik-overdahl}{LinkedIn: \underline{erik-overdahl}}
+  }
+\end{center}
+
+\resumeSection{Work Experience}
+
+  \institution{WiseTech Global}
+
+    \jobPosition{DevOps Engineer}{Nov 2021}{Oct 2022}
+    \begin{itemize}
+      \item
+            Automated all infrastructure deployment by writing Ansible
+            roles: building virtual machines in VMWare VSphere,
+            provisioning app servers, configuring load balancers, setting
+            up an Elasticsearch-Logstash-Kibana monitoring stack, and
+            managing Jenkins
+      \item
+            Maintained a complex ETL data pipeline capable of handling
+            millions of events per minute using Kafka, Google BigQuery,
+            and Apache Airflow
+      \item
+            Automated pulling vulnerability data from Tenable and
+            applying patches to servers using Ansible and Python
+    \end{itemize}
+
+    \jobPosition{Software Developer}{July 2019}{Nov 2021}
+    \begin{itemize}
+      \item
+            Led development and testing for text extraction tool for
+            shipping industry, including extensive development with
+            both relational and graph databases, which reduced time to
+            export of millions of end-to-end freight shipping rates by
+            a factor of 14
+      \item
+            Built microservices responsible for processing customer
+            data using Java Spring Boot
+    \end{itemize}
+
+  \institution{UNC Eshelman School of Pharmacy Molecular Modeling Lab}
+
+    \jobPosition{Research Assistant}{June 2018}{July 2019}
+    \begin{itemize}
+      \item
+            Collaborated with computational chemists to develop
+            pipelines for text extraction and pharmaceutical machine
+            learning models for predicting chemical activity using Python
+      \item
+            Extracted and standardized toxicological data from more
+            than 50,000 unstructured European Chemical Agency reports
+            for use in model training
+      \item
+            Developed several unique data cleaning pipelines that
+            collected and collated data across thousands of diverse
+            databases using Python, SQL, and web scraping
+    \end{itemize}
+
+\resumeSection{Education}
+  \institution{Bradfield School of Computer Science}
+    \jobPosition{Computer Science Intensive}{Aug 2021}{Aug 2022}
+
+  \institution{St.\ Olaf College}
+    \jobPosition{BA in Economics and Mathematics with Statistics concentration}{2014}{2018}
+    Member of saxophone studio and Norseman Band
+
+\resumeSection{Skills/Technologies}
+  \paragraph{Languages}
+    Java,
+    Go,
+    Python,
+    Bash,
+    SQL,
+    Cypher
+  \paragraph{Tools}
+    Unix,
+    Docker,
+    git,
+    Ansible,
+    Nagios,
+    Kafka,
+    Elasticsearch,
+    Logstash
+
+\end{document}
