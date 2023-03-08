@@ -42,13 +42,43 @@
     $|$
     \href{https://linkedin.com/in/erik-overdahl}{LinkedIn: \underline{erik-overdahl}}
   }
-\\\vspace{5pt}
-  {\large\emph{
-      Software Engineer with 4 Years Experience, Passionate About
-      Performance and Tooling
-    }
-  }
+% \\\vspace{5pt}
+%   {\large\emph{
+%       Software Engineer with 4 Years Experience, Passionate About
+%       Performance and Tooling
+%     }
+%   }
 \end{center}
+
+\resumeSection{Skills/Technologies}
+  \begin{description}
+      \item [Proficient]
+          Java,
+          Go,
+          Python,
+          Bash,
+          SQL,
+          Cypher,
+          Postgresql,
+          Neo4j,
+          SQlite,
+          Docker,
+          Git,
+          Linux (Unix),
+          Ansible,
+          VMWare,
+          Spring Boot
+
+      \item [Exposure]
+          Elasticsearch,
+          Logstash,
+          Google Cloud Platform (GCP),
+          Amazon Web Services (AWS),
+          Redis,
+          Nagios,
+          Apache Kafka,
+          Avro
+  \end{description}
 
 \resumeSection{Work Experience}
 
@@ -57,33 +87,40 @@
     \jobPosition{DevOps Engineer}{Nov 2021}{Oct 2022}
     \begin{itemize}[noitemsep]
       \item
-            Automated all infrastructure deployment by writing Ansible
-            roles: building virtual machines in VMWare VSphere; provisioning app
-            servers; configuring load balancers; setting up an
-            Elasticsearch-Logstash-Kibana monitoring stack; establishing Redis
-            instances for per-service and shared caching; and managing Jenkins.
+            Automated all infrastructure deployment using Ansible and
+            Jenkins, reducing server provisioning time by 75\% compared to manual
+            process: automated virtual machine building/deployment in VMWare
+            Vsphere; app server provisioning; load balancer routing and logging
+            configuration; deployment of ELK Stack and Nagios monitoring tools;
+            deployment of Redis for per-instance and shared caching; management of
+            Jenkins pipelines and plugins
+      \item
+            Created tests for infrastructure deployment using Molecule,
+            speeding up infrastructure automation development by 50\%
       \item
             Maintained a complex ETL data pipeline capable of handling
             millions of events per minute using Kafka, ElasticSearch, Google BigQuery,
-            and Apache Airflow.
+            and Apache Airflow
       \item
-            Automated pulling security vulnerability data from Tenable and
-            applying patches to servers using Ansible and Python.
-      \item
-            Set up Nagios monitoring checks for critical systems, e.g.\ health of disaster recovery database failovers
+            Automated application of security patches by using Python to
+            pull data from Tenable and update relevant packages using Ansible; cut
+            average response time for security vulnerability tickets from 1 week to
+            1 hour
     \end{itemize}
 
     \jobPosition{Software Developer}{July 2019}{Nov 2021}
     \begin{itemize}[noitemsep]
       \item
-            Led development and testing for text extraction tool for
-            shipping industry, including extensive development with
-            both relational (Postgres) and graph (Neo4j) databases, which reduced time to
-            export of millions of end-to-end freight shipping rates by
-            a factor of 14.
+            Led research project leveraging graph database (Neo4j) for
+            storage/retrieval of complex shipping route and pricing information;
+            proof-of-concept achieved 14x reduction in time to export 1 million
+            end-to-end shipping rates with pricing rules applied compared to
+            existing codebase
       \item
-            Built microservices responsible for processing customer
-            data using Java Spring Boot.
+            Refactored legacy codebase using Java Spring Boot; inverted
+            flow of control, allowing for integration of new data backends
+            to feed existing pricing rules engine and for the creation of modular
+            tests
     \end{itemize}
 
   \institution{UNC Eshelman School of Pharmacy Molecular Modeling Lab}
@@ -108,40 +145,17 @@
   \institution{Bradfield School of Computer Science}
     \jobPosition{Computer Science Intensive}{Aug 2021}{Aug 2022}
 
-    \emph{Projects}
-    \begin{itemize}[noitemsep]
-      \item A full key-value store with custom SSTable file format
-      \item A distributed key-value store
-      \item Implementation of a reliable data transfer protocol built on top of UDP
-      \item Built a DNS client and an HTTP proxy server using Unix sockets
-      \item Improved performance of compute-heavy code by improving cache locality
-    \end{itemize}
+    % \emph{Projects}
+    % \begin{itemize}[noitemsep]
+    %   \item A full key-value store with custom SSTable file format
+    %   \item A distributed key-value store
+    %   \item Implementation of a reliable data transfer protocol built on top of UDP
+    %   \item Built a DNS client and an HTTP proxy server using Unix sockets
+    %   \item Improved performance of compute-heavy code by improving cache locality
+    % \end{itemize}
 
   \institution{St.\ Olaf College}
     \jobPosition{BA in Economics and Mathematics with Statistics concentration}{2014}{2018}
 
-\resumeSection{Skills/Technologies}
-  \begin{description}
-          \item [Languages]
-    Java,
-    Go,
-    Python,
-    Bash,
-    SQL,
-    Cypher
-          \item [Tools]
-    Unix,
-    Docker,
-    Git,
-    Postgres,
-    Neo4j,
-    Redis,
-    Ansible,
-    Nagios,
-    Apache Kafka,
-    Avro,
-    Elasticsearch,
-    Logstash
-  \end{description}
 
 \end{document}
